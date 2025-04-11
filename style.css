@@ -1,0 +1,152 @@
+/* style.css */
+ :root {
+  --primary-color: #ff8c00; /* Sunset Orange */
+  --secondary-color: #e91e63; /* Pink */
+  --tertiary-color: #9c27b0; /* Purple */
+  --light-bg: #f0f0f0;
+  --dark-bg: #333;
+  --light-text: #333;
+  --dark-text: #f0f0f0;
+  --box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
+  --box-shadow-inset: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+ }
+ 
+
+ [data-theme="dark"] {
+  --light-bg: #333;
+  --dark-bg: #f0f0f0;
+  --light-text: #f0f0f0;
+  --dark-text: #333;
+  --box-shadow: 5px 5px 10px #262626, -5px -5px 10px #404040;
+  --box-shadow-inset: inset 5px 5px 10px #262626, inset -5px -5px 10px #404040;
+ }
+ 
+
+ body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  transition: background-color 0.3s, color 0.3s;
+ }
+ 
+
+ /* Header */
+ header {
+  background-color: var(--primary-color);
+ }
+ 
+
+ /* Neumorphism Card */
+ .neumorphic {
+  background-color: var(--light-bg);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s, background-color 0.3s;
+ }
+ 
+
+ .neumorphic:hover {
+  box-shadow: var(--box-shadow-inset);
+ }
+ 
+
+ /* Progress Bar */
+ .progress {
+  height: 20px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+  box-shadow: var(--box-shadow-inset);
+ }
+ 
+
+ .progress-bar {
+  background-color: var(--secondary-color);
+  transition: width 0.5s ease-in-out;
+ }
+ 
+
+ /* Buttons */
+ .btn {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transition: box-shadow 0.3s, transform 0.3s;
+ }
+ 
+
+ .btn:hover,
+ .btn:focus {
+  box-shadow: var(--box-shadow-inset);
+  transform: scale(1.05);
+ }
+ 
+
+ /* Dark Mode Toggle */
+ #darkModeToggle {
+  background-color: var(--tertiary-color);
+  border: none;
+ }
+ 
+
+ /* Forms */
+ .form-control {
+  border-radius: 10px;
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  border: none;
+  box-shadow: var(--box-shadow-inset);
+  transition: box-shadow 0.3s, background-color 0.3s, color 0.3s;
+ }
+ 
+
+ .form-control:focus {
+  box-shadow: var(--box-shadow);
+  background-color: var(--light-bg);
+  color: var(--light-text);
+ }
+ 
+
+ .form-label {
+  color: var(--light-text);
+ }
+ 
+
+ /* Footer */
+ footer {
+  background-color: var(--light-bg);
+  color: var(--light-text);
+  box-shadow: var(--box-shadow);
+ }
+ 
+
+ /* Notification Area */
+ #notificationArea {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+ }
+ 
+
+ .notification {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+ }
+ 
+
+ .notification.show {
+  opacity: 1;
+ }
+ 
+
+ /* Media Queries for Responsiveness */
+ @media (max-width: 768px) {
+  .col-md-6 {
+  margin-bottom: 20px;
+  }
+ }
