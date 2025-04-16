@@ -20,7 +20,9 @@
   --box-shadow: 5px 5px 10px #262626, -5px -5px 10px #404040;
   --box-shadow-inset: inset 5px 5px 10px #262626, inset -5px -5px 10px #404040;
  }
- 
+ [data-theme="dark"] .card-body { 
+    color: white
+}
 
  body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,8 +57,8 @@
  .progress {
   height: 20px;
   border-radius: 10px;
-  background-color: #e9ecef;
-  box-shadow: var(--box-shadow-inset);
+  background-color: #a1a4a7;
+  
  }
  
 

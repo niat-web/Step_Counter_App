@@ -4,7 +4,7 @@
 This project is a step counter application built using HTML, CSS, and JavaScript. It allows users to set a daily step goal, track their progress, and view simulated stats such as calories burned, distance walked, and time active. The application features local storage for persisting the step goal and user preferences, along with UI enhancements like dark/light mode and notifications.
 
 ## Output
-<iframe src="https://niat-web.github.io/Step_Counter_App" height="1000" width="300" title="Step_Counter_App"></iframe>
+<iframe src="https://niat-web.github.io/Step_Counter_App/" height="1000" width="300" title="Step_Counter_App"></iframe>
 
 ## Project Requirements
 **Technologies:** HTML, CSS, JavaScript, Font Awesome (for icons)
